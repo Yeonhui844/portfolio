@@ -6,7 +6,7 @@
 
   --first-color: #81b1fa;
   --white-color: #fafaff;
-  --dark-color: #2a3b47;
+  --dark-color: #005fa3;
   --text-color: #697477;
 
   --body-font: "Pretendard", sans-serif;
@@ -112,7 +112,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--first-color);
+  background-color: var(--white-color);
 }
 
 .nav {
@@ -125,18 +125,21 @@ img {
 .nav-item {
   margin-bottom: var(--mb4);
 }
+
 .nav-link {
   position: relative;
-  color: var(--dark-color);
-}
-.nav-link:hover {
   color: var(--first-color);
 }
+.nav-item .nav-link:hover {
+  color: var(--dark-color);
+}
 .nav-logo {
-  color: var(--white-color);
+  color: var(--first-color);
+  border: 1px solid var(--first-color);
+  padding: 10px;
 }
 .nav-toggle {
-  color: var(--white-color);
+  color: var(--first-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -159,7 +162,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     transition: 0.5s;
     backdrop-filter: blur(10px);
   }
@@ -173,7 +176,7 @@ img {
 
 .home {
   position: relative;
-  background-color: var(--first-color);
+  background: linear-gradient(45deg, var(--first-color), var(--white-color));
   overflow: hidden;
 }
 .home-container {
@@ -183,11 +186,8 @@ img {
 .home-title {
   align-self: flex-end;
   font-size: var(--big-font-size);
-  color: var(--white-color);
+  color: var(--first-color);
   line-height: 0.8;
-}
-.home-title span {
-  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
 }
 
 .home-scroll {
@@ -253,7 +253,10 @@ img {
 /*SKILLS*/
 
 .skills-container {
-  row-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
 }
 .skills-subtitle {
   color: var(--first-color);
@@ -276,6 +279,11 @@ img {
 
 .skills-img img {
   border-radius: 0.5rem;
+}
+
+.skills-box {
+  display: flex;
+  gap: 15rem;
 }
 
 /*PORTFOLIO*/
@@ -418,13 +426,13 @@ img {
     display: none;
   }
   .nav-link {
-    color: var(--white-color);
+    color: var(--first-color);
   }
   .nav-link:hover {
-    color: var(--white-color);
+    color: var(--first-color);
   }
   .active::after {
-    background-color: var(--white-color);
+    color: var(--first-color);
   }
 
   .home-container {
