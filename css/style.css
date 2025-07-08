@@ -254,13 +254,20 @@ img {
   justify-items: center;
   row-gap: 2rem;
   text-align: center;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb2);
+  margin-right: var(--mb2);
 }
 
 .about-img {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 250px;
+  width: 400px;
+  height: 500px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -292,6 +299,8 @@ img {
 
 /*SKILLS*/
 
+.skills {
+}
 .skills-container {
   display: flex;
   justify-content: center;
@@ -299,13 +308,23 @@ img {
   padding: 100px 0;
 }
 .skills-subtitle {
-  color: var(--first-color);
+  color: var(--white-color);
   margin-bottom: var(--mb3);
+  font-size: 22px;
+  background-color: #a2c7ff;
+  height: 50px;
+  padding: 5px 5px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: auto;
 }
 
 .skills-name {
   display: inline-block;
-  font-size: var(--small-font-size);
+  font-size: 16px;
   margin-right: var(--mb2);
   margin-bottom: var(--mb3);
   border-radius: 0.25rem;
@@ -366,7 +385,11 @@ img {
 }
 
 /*CONTACT*/
-
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 .contact-container {
   row-gap: 2rem;
 }
@@ -489,7 +512,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: initial;
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   .skills-container {
@@ -504,7 +527,7 @@ img {
   }
 
   .contact-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
   .contact-form {
@@ -512,7 +535,7 @@ img {
   }
 
   .footer-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
 }
