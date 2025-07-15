@@ -573,7 +573,7 @@ img {
 
   .portfolio-container {
     grid-template-columns: 1fr;
-    margin-left: 0;
+    margin-left: 100px;
     justify-items: center;
   }
 
@@ -583,7 +583,7 @@ img {
   }
 
   .home-title {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   .home-container img {
