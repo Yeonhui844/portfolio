@@ -583,7 +583,7 @@ img {
   }
 
   .home-title {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .home-container img {
@@ -617,7 +617,6 @@ img {
 
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
-    margin-left: 0;
     justify-items: center;
     gap: 2rem;
   }
