@@ -620,12 +620,7 @@ img {
   width: calc(100% - 2rem);
   margin-left: 320px;
 }
-.portfolio-img {
-  position: relative;
-  overflow: hidden;
-  width: 400px;
-  height: 300px;
-}
+
 .portfolio-img img {
   border-radius: 0.3rem;
   width: 100%;
