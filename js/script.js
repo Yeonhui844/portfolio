@@ -89,6 +89,7 @@ const teamMembers = [
   { name: "Detailed page", role: "상세페이지" },
   { name: "SNS Card news", role: "SNS카드뉴스" },
   { name: "Clone coding", role: "클론코딩" },
+  { name: "Landing page", role: "랜딩페이지" },
 ];
 
 const cards = document.querySelectorAll(".card");
